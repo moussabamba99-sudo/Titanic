@@ -10,7 +10,9 @@ from sklearn.metrics import classification_report
 #...............................
 # CHARGEMENT DES DONNEES
 #...............................
-df = pd.read_csv("train.csv")
+
+data_url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
+df = pd.read_csv(data_url)
 print (df.head())
 print (df.info())
 print (df["Survived"].value_counts())
